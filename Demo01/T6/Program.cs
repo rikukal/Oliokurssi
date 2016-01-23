@@ -26,7 +26,7 @@ namespace T6
             int min = seconds / 60 - hour * 60;             //  Tähän bensan kulutus
             int second = seconds % 60;                      //      Tässä tuhlattu € -bensasta 
 
-
+            //toimiiko github-päivitys kotikoneelta?
 
             Console.WriteLine("Ajoit:{0}km, kulutit {1} litraa bensaa ja rahaa bensaan kului {2} euroa", matka, bensa, euro);
         }
