@@ -17,16 +17,13 @@ namespace T6
             Bensaa kuluu 17,55 litraa, kustannus 27,99 eurolhlha
             */
             Console.WriteLine("Kuinka monta kilometriä ajoit?");
+            string input = Console.ReadLine();
 
-            string line = Console.ReadLine();
+            double matka = Convert.ToDouble(input);            //Tähän matka                 
+             
+            double  bensa = matka / 100 * 7.02  ;   //  Tähän bensan kulutus
 
-            int seconds = int.Parse(line);
-
-            int hour = seconds / 3600;                      //    Tähän matka                 
-            int min = seconds / 60 - hour * 60;             //  Tähän bensan kulutus
-            int second = seconds % 60;                      //      Tässä tuhlattu € -bensasta 
-
-            //toimiiko github-päivitys kotikoneelta? -HURRAA
+            double euro = bensa * 1.595;          //Tässä tuhlattu € -bensasta
 
             Console.WriteLine("Ajoit:{0}km, kulutit {1} litraa bensaa ja rahaa bensaan kului {2} euroa", matka, bensa, euro);
         }
